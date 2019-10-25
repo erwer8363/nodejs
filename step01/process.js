@@ -1,0 +1,7 @@
+console.log(process.getgid())
+console.log(process.pid)
+console.log(process.version)
+console.log(process.platform)
+console.log(process.execArgv)
+console.log(process.argv)
+console.log(process.arch)

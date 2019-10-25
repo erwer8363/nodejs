@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            font-size: 16px
+        }
+
+        table {
+            width: 100%;
+            font-size: 12px;
+            table-layout: fixed;
+            empty-cells: show;
+            border-collapse: collapse;
+            margin: 0 auto;
+            border: 1px solid #cad9ae;
+            color: #666;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ff00aa;
+        }
+
+        tr:hover {
+            background: #ff9
+        }
+
+        td {
+            height: 20px;
+        }
+
+        td, th {
+            border: 1px solid #cad9ae;
+            padding: 0 1em 0;
+            cursor: pointer;
+        }
+
+        .txt {
+            width: 100px;
+            word-break: keep-all; /* 禁止词断开显示*/
+            display: inline-block;
+            /*强迫在一行显示*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<h1>优雅的表数据结构</h1>
+<table>
+    <thead>
+    <tr>
+        <th>排名</th>
+        <th>校名</th>
+        <th>总得分</th>
+        <th>学校类型</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">1</td>
+        <td>清华大学</td>
+        <td colspan="2">613</td>
+    </tr>
+    <tr>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>613</td>
+        <td>理工</td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <span class="txt">包马拉多纳眯会梅西寻支持 拼死重乘阿根廷指教</span>
+</div>
+</body>
+</html>
