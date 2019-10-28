@@ -5,21 +5,22 @@
       <change afterPath="$PROJECT_DIR$/redis/event-loop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/canvas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/greeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/greeting.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/step02/buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/step02/buffer.js" afterDir="false" />
+>>>>>>> 0013afd7f31661265df8c86320980cfaea2fc7ce
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
@@ -106,6 +107,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 0013afd7f31661265df8c86320980cfaea2fc7ce
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -116,6 +119,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -136,19 +140,20 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 0013afd7f31661265df8c86320980cfaea2fc7ce
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
     <bower-package value="/usr/local/lib/node_modules/bower" />
     <bower.json value="" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+<<<<<<< HEAD
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -194,11 +199,17 @@
       </pane>
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1SjCD14a9jxYARSZdb3F2JsztfS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+>>>>>>> 0013afd7f31661265df8c86320980cfaea2fc7ce
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.10.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -239,6 +250,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564322604379</updated>
       <workItem from="1564322605998" duration="2813000" />
+<<<<<<< HEAD
       <workItem from="1572016216445" duration="11094000" />
       <workItem from="1572270640248" duration="97000" />
     </task>
@@ -499,6 +511,29 @@
         </state>
       </provider>
     </entry>
+=======
+      <workItem from="1572067496197" duration="2412000" />
+      <workItem from="1572070834583" duration="5000" />
+      <workItem from="1572227676191" duration="1368000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 0013afd7f31661265df8c86320980cfaea2fc7ce
   </component>
   <component name="masterDetails">
     <states>
