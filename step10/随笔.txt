@@ -1,0 +1,4 @@
+npm install babel-upgrade -g
+babel-upgrade --write
+删除node-modules文件夹
+npm install

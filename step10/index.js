@@ -1,5 +1,4 @@
-const R = require('ramda')
-
+const deepClone = require('./deepClone')
 const expectData = {
     ageLt18: [
         {name: "Uktg", age: 17},
@@ -199,6 +198,18 @@ Function.prototype.mtsApply = function (context) {
     delete context.fn
     return r
 }
+
+const target = {
+    field1: 1,
+    field2: undefined,
+    field3: {
+        child: 'child'
+    },
+    field4: [2, 4, 8]
+}
+
+let cloneTarget = deepClone(target)
+console.log(cloneTarget)
 
 
 
