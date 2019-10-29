@@ -24,3 +24,10 @@ Function.prototype.myCall = function (context) {
 let name = 'lilei'
 speak.myCall(Jim, 'tomorrow is sunday')
 speak.myCall(null, 'hello everyone')
+
+
+Function.prototype.myBind = function(context, ...innerArg){
+    return (...finnalArgs)=>{
+        return this.call(context, ...innerArg, ...finnalArgs)
+    }
+}
