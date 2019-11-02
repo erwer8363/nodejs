@@ -23,3 +23,24 @@ console.log(isType(fun))
 // console.log(str)
 //
 // console.log('是否是子字符串...', '[object Array]'.includes('Array'))
+
+
+Function.prototype.myBind = function (context, ...newArgs) {
+    // let me = this
+    return (...oldArgs) => {
+        console.log('这里执行了吗...', context, ...oldArgs)
+        return this.call(context, [newArgs, oldArgs].toString())
+    }
+}
+
+let person = {
+    name: 'jim',
+    speak(word) {
+        console.log('hello i am ' + this.name, ' 我说的话是... ', word)
+    }
+}
+
+let test = {
+    name: 'zhangxifan'
+}
+person.speak.myBind(test, '我是一个兵')('来自老百姓')
