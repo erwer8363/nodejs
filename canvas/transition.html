@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tran{
+            background: #fff;
+            color: black;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            border: 1px solid red;
+            transition: all 0.5s linear;
+            margin: 200px;
+        }
+        .tran:hover{
+            background: #000;
+            color: #fff;
+            margin-top: 100px;
+        }
+        .container{
+            display: block;
+            background: red;
+            width: 500px;
+            height: 300px;
+            margin-left: 200px;
+            position: relative;
+        }
+        .btn{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tran">transition</div>
+    <span class="container">
+        <button class="btn">
+            点击我
+        </button>
+    </div>
+</body>
+</html>
