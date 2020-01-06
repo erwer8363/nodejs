@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+    <style>
+        form {
+            border: 1px dotted #aaaaaa;
+            padding: 3px 6px;
+            margin: 0;
+            font: 14px Arial;
+        }
+
+        input {
+            color: #00008b;
+            background-color: #add8e6;
+            border: 1px solid #00008b;
+        }
+
+        select {
+            width: 80px;
+            color: #00008b;
+            background-color: #add8e6;
+            border: 1px solid #00008b;
+        }
+
+        textarea {
+            width: 200px;
+            height: 40px;
+            color: #00008b;
+            background-color: #add8e6;
+            border: 1px solid #00008b;
+        }
+
+        .txt {
+            border-bottom: 1px solid #005aa7;
+            color: #005aa7;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            background-color: transparent;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    <p>请输入您的姓名:<br><input type="text" name="name" id="name"></p>
+    <p>请选择您喜欢的颜色:<br>
+        <select name="color" id="color">
+            <option value="red">红</option>
+            <option value="green">绿</option>
+            <option value="blue">蓝</option>
+            <option value="yellow">黄</option>
+            <option value="cyan">青</option>
+            <option value="purple">紫</option>
+        </select>
+    </p>
+    <p>请问您的性别:<br>
+        <input type="radio" name="sex" id="male" value="male">男<br>
+        <input type="radio" name="sex" id="female" value="male">女
+    </p>
+    <p>您喜欢做什么:<br>
+        <input type="checkbox" name="hobby" id="book" value="male">读书<br>
+        <input type="checkbox" name="hobby" id="net" value="male">上网<br>
+        <input type="checkbox" name="hobby" id="sleep" value="male">睡觉
+    </p>
+    <p>我要留言:<br><textarea name="comments" id="comments" cols="30" rows="4"></textarea></p>
+    <p>请输入你的信息 <input type="text" name="info" id="info" class="txt"></p>
+    <p><input type="submit" name="btnSubmit" id="btnSubmit" value="submit"></p>
+</form>
+</body>
+</html>

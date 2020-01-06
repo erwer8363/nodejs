@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            float: left;
+            filter: brightness(1.5);
+        }
+
+        p {
+            width: 60px;
+            text-align: justify;
+            text-align-last: justify;
+        }
+
+        .alpha {
+            filter: grayscale(50);
+        }
+
+        .beta {
+            filter: drop-shadow(0px 16px 5px black);
+        }
+
+        .omiga {
+            -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 60%, rgba(0, 0, 0, .3));
+            /*box-reflect: below 5px linear-gradient(transparent 60%, rgba(0, 0, 0, .3));*/
+        }
+
+        .normal {
+
+        }
+    </style>
+</head>
+<body>
+<img src="./tree.png" alt="">
+<img src="./tree.png" alt="" class="alpha">
+<img src="./tree.png" alt="" class="beta">
+<img src="./tree.png" alt="" class="omiga">
+<div class="normal"></div>
+<p>通信</p>
+<p>通信员</p>
+</body>
+</html>

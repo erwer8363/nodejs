@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>excel表格</title>
+    <style>
+        .formdata {
+            border: 1px solid #5f6f7e;
+            border-collapse: collapse;
+            font-family: Arial;
+        }
+
+        .formdata caption {
+            text-align: left;
+            padding-bottom: 6px;
+        }
+
+        .formdata th {
+            border: 1px solid #005aa7;
+            background-color: #e2e2e2;
+            color: #000;
+            text-align: left;
+            font-weight: normal;
+            padding: 2px 8px 2px 6px;
+            margin: 0;
+        }
+
+        .formdata td {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ababab;
+        }
+
+        .formdata input {
+            width: 100px;
+            height: 100%;
+            padding: 1px 3px;
+            margin: 0;
+            border: none;
+            font-family: Arial;
+            outline: none;
+        }
+
+        .btn {
+            border: 1px solid #0083f2;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+<form action="post">
+    <table class="formdata">
+        <caption>公司销售统计表</caption>
+        <tr>
+            <th></th>
+            <th scope="col">2004</th>
+            <th scope="col">2005</th>
+            <th scope="col">2006</th>
+            <th scope="col">2007</th>
+        </tr>
+        <tr>
+            <th scope="row">硬盘</th>
+            <td><input type="text" name="harddisk2001" id="harddisk2001"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2002"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2003"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2004"></td>
+        </tr>
+        <tr>
+            <th scope="row">主板</th>
+            <td><input type="text" name="harddisk2001" id="harddisk2005"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2006"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2007"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2008"></td>
+        </tr>
+        <tr>
+            <th scope="row">内存条</th>
+            <td><input type="text" name="harddisk2001" id="harddisk2009"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2010"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2011"></td>
+            <td><input type="text" name="harddisk2001" id="harddisk2012"></td>
+        </tr>
+    </table>
+    <p>
+        <input type="submit" name="btnSubmit" id="btnSubmit" value="Add Data" class="btn">
+        <input type="reset" value="resetAll" class="btn">
+    </p>
+</form>
+</body>
+</html>

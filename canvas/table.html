@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .datalist {
+            color: #0046a6;
+            background-color: #d2e8ff;
+            font-family: Arial;
+            border: 1px solid #007eff;
+            border-collapse: collapse; /*边框重叠*/
+        }
+
+        .datalist caption {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .datalist th {
+            border: 1px solid #429fff;
+            background-color: #d2e8ff;
+            font-weight: bold;
+            padding: 4px 10px;
+            text-align: center;
+        }
+
+        .datalist td {
+            border: 1px solid #429fff;
+            text-align: right;
+            padding: 4px;
+        }
+
+        .datalist tr.altrow {
+            background-color: #c7e5ff;
+        }
+
+        .datalist tr:hover {
+            background-color: #c4e4ff;
+        }
+    </style>
+</head>
+<body>
+<table class="datalist" summary="This table shows the yearly income for years 2004 to 2007">
+    <caption>年收入 2004-2007</caption>
+    <tr>
+        <th></th>
+        <th scope="col">2004</th>
+        <th scope="col">2005</th>
+        <th scope="col">2006</th>
+        <th scope="col">2007</th>
+    </tr>
+    <tr>
+        <th scope="row">拨款</th>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+    </tr>
+    <tr class="altrow">
+        <th scope="row">拨款</th>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+    </tr>
+    <tr>
+        <th scope="row">拨款</th>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+    </tr>
+    <tr class="altrow">
+        <th scope="row">拨款</th>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+    </tr>
+    <tr>
+        <th scope="row">拨款</th>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+        <td>11,980</td>
+    </tr>
+</table>
+</body>
+</html>
