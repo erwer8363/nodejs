@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .content {
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            opacity: 0;
+            transform: translateY(5px);
+            transition: opacity linear 200ms, transform ease-in 150ms;
+        }
+
+        input:not(:placeholder-shown) ~ label {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="input-field">
+        <input type="text" placeholder="Enter your first name" id="fname">
+        <label for="fname">First Name</label>
+    </div>
+    <div class="input-field">
+        <input type="text" placeholder="Enter your last name" id="lname">
+        <label for="lname">Last Name</label>
+    </div>
+</div>
+</body>
+</html>

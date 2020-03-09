@@ -1,10 +1,12 @@
+const throttle = require('./防抖函数')
+
 function isType(obj, type = '') {
-    console.log(Object.prototype.toString.call(obj))
-    if (type) {
-        return Object.prototype.toString.call(obj).match(/\s\b(\w+)/) === type
-    } else {
-        return Object.prototype.toString.call(obj).match(/\s\b(\w+)/)[1]
-    }
+  console.log(Object.prototype.toString.call(obj))
+  if (type) {
+    return Object.prototype.toString.call(obj).match(/\s\b(\w+)/) === type
+  } else {
+    return Object.prototype.toString.call(obj).match(/\s\b(\w+)/)[1]
+  }
 
 }
 
@@ -12,9 +14,23 @@ function isType(obj, type = '') {
 let arr = [1, 2, 3]
 let testObj = {a: 1, b: 2}
 let fun = function () {
-    return 1
+  return 1
 }
 console.log(isType(fun))
+let count = 0
+let myttle = throttle(() => {
+  console.log('买黄瓜的,过来.买两条..')
+}, 1000)
+
+let intervalId = setInterval(() => {
+  if (count <= 10) {
+    console.log('倒计时...', count)
+    count++
+  } else {
+    clearInterval(intervalId)
+  }
+  myttle()
+}, 200)
 
 
 // let reg = /\s\w/
@@ -26,21 +42,21 @@ console.log(isType(fun))
 
 
 Function.prototype.myBind = function (context, ...newArgs) {
-    // let me = this
-    return (...oldArgs) => {
-        console.log('这里执行了吗...', context, ...oldArgs)
-        return this.call(context, [newArgs, oldArgs].toString())
-    }
+  // let me = this
+  return (...oldArgs) => {
+    console.log('这里执行了吗...', context, ...oldArgs)
+    return this.call(context, [newArgs, oldArgs].toString())
+  }
 }
 
 let person = {
-    name: 'jim',
-    speak(word) {
-        console.log('hello i am ' + this.name, ' 我说的话是... ', word)
-    }
+  name: 'jim',
+  speak(word) {
+    console.log('hello i am ' + this.name, ' 我说的话是... ', word)
+  },
 }
 
 let test = {
-    name: 'zhangxifan'
+  name: 'zhangxifan',
 }
 person.speak.myBind(test, '我是一个兵')('来自老百姓')

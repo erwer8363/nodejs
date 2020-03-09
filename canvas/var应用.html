@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button class="btn">按钮</button>
+<button class="btn">按钮</button>
+<button class="btn">按钮</button>
+<button class="btn">按钮</button>
+<button class="btn">按钮</button>
+<button class="btn">按钮</button>
+<script>
+  var btns = document.querySelectorAll(".btn")
+  for (var i = 0; i < btns.length; i++) {
+    (function (i) {
+      btns[i].addEventListener("click", function () {
+        console.log("你点击了第" + i + "个按钮")
+      })
+    })(i)
+  }
+  console.log(btns)
+</script>
+</body>
+</html>
