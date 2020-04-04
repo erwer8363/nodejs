@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>transition</title>
+  <style>
+    .con1 {
+      width: 80px;
+      height: 80px;
+      background: rgb(18, 185, 121);
+      transition: width 2s ease 1s;
+    }
+
+    .con1:hover {
+      width: 200px;
+    }
+
+    button {
+      width: 100px;
+      height: 70px;
+      border-radius: 10%;
+      color: forestgreen;
+    }
+
+    button.one {
+      transition: all 3s;
+    }
+
+    button:hover {
+      background: rgb(218, 118, 4);
+    }
+
+    .box {
+      background: red;
+      height: 120px;
+      width: 120px;
+      position: relative;
+      animation: change 5s infinite;
+    }
+
+    .box:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes change {
+      from {
+        left: 0;
+      }
+      to {
+        left: 200px;
+      }
+    }
+    .box1{
+      width:120px;
+      height:120px;
+      position:relative;
+      animation: changer 2s linear 2s infinte reverse running both;
+    }
+    .box1:hover{
+      animation-play-start: pause;
+    }
+    @keyframes changer {
+      0%{
+        height: 150px;
+        background: yellow;
+      }
+      50%{
+        width:80px;
+      }
+      70%{
+        width:200px;
+        height:200px;
+      }
+      100%{
+        width:100px;
+        height:100px;
+        backgound: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="con1"></div>
+<div>
+  <button class="one">Monday</button>
+  <button class="two">Tuesday</button>
+</div>
+<div class="box"></div>
+<div class="box1"></div>
+</body>
+</html>

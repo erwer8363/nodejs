@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .con {
+      background: red;
+    }
+
+    .it {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .it + .it {
+      border-left: 1px solid red;
+    }
+
+    .item {
+      float: left;
+      position: relative;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .item:hover {
+      border-bottom: 2px solid blue;
+      transition: all 1s linear;
+    }
+
+    .item:not(:first-child)::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 80%;
+      background: red;
+      top: 2px;
+      left: -6px;
+    }
+  </style>
+</head>
+<body>
+<ul class="con">
+  <li class="it">第一天</li>
+  <li class="it">第二天</li>
+  <li class="it">第三天</li>
+  <li class="it">第四天</li>
+  <li class="it">第五天</li>
+  <li class="it">第六天</li>
+  <li class="it">第七天</li>
+</ul>
+<br>
+<hr>
+<ul class="con2">
+  <li class="item">第一天</li>
+  <li class="item">第二天</li>
+  <li class="item">第三天</li>
+  <li class="item">第四天</li>
+  <li class="item">第五天</li>
+  <li class="item">第六天</li>
+  <li class="item">第七天</li>
+</ul>
+</body>
+</html>
