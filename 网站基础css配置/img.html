@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    img {
+      position: relative;
+      width: 200px;
+    }
+
+    img::after {
+      content: attr(alt);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: translateY(100%);
+      transition: transform .2s;
+    }
+
+    img:before {
+      content: attr(data-src);
+    }
+
+    img:hover::after {
+      transform: translateY(0);
+    }
+
+    .title:empty::after {
+      content: '无内容';
+      border: 1px solid black;
+    }
+
+    .txt {
+      width: 300px;
+      height: 30px;
+      font-size: 18px;
+      line-height: 30px;
+      border: 1px solid blueviolet;
+    }
+
+    a + a:before {
+      content: '';
+      font-size: 0;
+      padding: 10px 3px 1px;
+      margin-left: 6px;
+      border-left: 1px solid gray;
+    }
+
+    button {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    label {
+      display: inline-block;
+      line-height: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<img data-src="./assets/images/logo.jpg" src="./assets/images/logo.jpg" alt="这是一个logo">
+<img src="" alt="这是一个logo">
+<h3 class="title">asdasdasd</h3>
+<div class="txt">
+  这里写一写任荣..让我看下
+</div>
+<a href="">登陆</a><a href="">注册</a><a href="">登陆</a><a href="">注册</a>
+<button id="btn"></button>
+<label for="btn">按钮</label>
+</body>
+</html>
