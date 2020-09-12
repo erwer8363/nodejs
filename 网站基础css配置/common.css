@@ -80,7 +80,7 @@ div {
 /*控制div元素自动换行*/
 div {
     word-wrap: break-word;
-    word-break：break-all;
+    word-break: break-all;
 }
 
 /*画三角形*/
