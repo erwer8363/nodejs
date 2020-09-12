@@ -1,9 +1,11 @@
 export default {
-    functional:true,
-    props:{
-        render:Function
-    },
-    render:(h,ctx)=>{
-        return ctx.props.render(h)
-    }
+  functional: true,
+  // 组件接收的外部属性
+  props: {
+    render: Function,
+  },
+  render: (h, ctx) => {
+    const {props} = ctx
+    return props.render(h)
+  },
 }

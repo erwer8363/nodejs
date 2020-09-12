@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>瀑布流</title>
+  <style>
+      .masonry {
+          display: flex;
+          flex-direction: row;
+      }
+
+      @media only screen and (min-width: 500px) {
+          .masonry {
+              flex-direction: row;
+          }
+      }
+
+      .column {
+          display: flex;
+          flex-flow: column wrap;
+          width: 100%;
+      }
+
+      @media only screen and (min-width: 500px) {
+          .column {
+              width: calc(100% / 5);
+          }
+      }
+  </style>
+</head>
+<body>
+<div class="masonry">
+  <div class="column">
+    <div class="item">
+      <div class="item__content">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="item">
+      <div class="item__content">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="item">
+      <div class="item__content">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="item">
+      <div class="item__content">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="item">
+      <div class="item__content">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
