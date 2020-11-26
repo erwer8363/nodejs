@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .input:placeholder-shown::placeholder {
+          color: transparent;
+      }
+
+      .g {
+          position: relative;
+          width: 150px;
+      }
+
+      .input-label {
+          position: absolute;
+          left: 16px;
+          top: 14px;
+          pointer-events: none;
+          transition: all 0.25s;
+      }
+
+      .input {
+          line-height: 3.5;
+          border: 1px solid transparent;
+          border-bottom: 1px solid red;
+          outline: none;
+      }
+
+      .g::after {
+          content: '';
+          position: absolute;
+          border-bottom: 2px solid #2486ff;
+          left: 0;
+          right: 0;
+          bottom: -1px;
+          transform: scaleX(0);
+          transition: transform 0.25s;
+      }
+
+      .g:focus-within::after {
+          transform: scaleX(1);
+      }
+
+      .input:not(:placeholder-shown) + .input-label,
+      .input:focus + .input-label {
+          transform: scale(.75) translate(0, -32px);
+      }
+  </style>
+</head>
+<body>
+<div class="g">
+  <input type="text" class="input" placeholder="邮箱">
+  <label for="" class="input-label">邮箱</label>
+</div>
+</body>
+</html>
