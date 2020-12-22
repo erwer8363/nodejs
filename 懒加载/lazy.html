@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      img {
+          display: block;
+          margin-bottom: 50px;
+          width: 200px;
+          height: 400px;
+      }
+  </style>
+</head>
+<body>
+<img src="./img/default.jpg" data-src="./img/1.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/2.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/3.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/4.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/5.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/6.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/7.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/8.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/9.jpg" alt="">
+<img src="./img/default.jpg" data-src="./img/10.jpg" alt="">
+<script>
+function lazyLoad() {
+  let viewHeight = window.screen.availHeight
+  let imgs = document.querySelectorAll('img[data-src]')
+  imgs.forEach((item, index) => {
+    if (item.dataset.src === '') return
+    let rect = item.getBoundingClientRect()
+    if (rect.bottom >= 0 && rect.top < viewHeight) {
+      console.log('这个react是。。', item.dataset.src, rect.bottom, rect.top, viewHeight)
+      item.src = item.dataset.src
+      item.removeAttribute('data-src')
+    }
+  })
+}
+
+function throttle(fn, delay) {
+  let timer
+  let preTime
+  return function (...args) {
+    const currentTime = Date.now()
+    const context = this
+    if (!preTime) preTime = currentTime
+
+    if(preTime-currentTime>delay){
+      preTime = currentTime
+      fn.apply(context,args)
+      clearTimeout(timer)
+      return
+    }
+
+    timer = setTimeout(function (){
+      preTime = Date.now()
+      timer = null
+      fn.apply(context,args)
+    }, delay)
+  }
+}
+
+const config = {
+  rootMargin: '0ox',
+  threshold: 0
+}
+
+let observer = new IntersectionObserver((entries, self) => {
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      let img = entry.target
+      let src = img.dataset.src
+      if(src){
+        img.src = src
+        img.removeAttribute('data-src')
+      }
+      self.unobserve(entry.target)
+    }
+  })
+},config)
+
+imgs.forEach(img=>{
+  observer.observe(img)
+})
+
+window.addEventListener('scroll', throttle(lazyLoad,200))
+</script>
+</body>
+</html>

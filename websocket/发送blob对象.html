@@ -31,7 +31,7 @@ const receivedMsgContainer = document.querySelector('#receivedMessage')
 const socket = new WebSocket('ws://echo.websocket.org')
 
 // 监听连接成功事件
-socket.addEventListener('open', function (event) {
+socket.addEventListener('open', ()=> {
   console.log('连接成功，可以开始通讯')
 })
 

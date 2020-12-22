@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .dot {
+          display: inline-block;
+          width: 8em;
+          height: 1em;
+          line-height: 1;
+          text-align: left;
+          vertical-align: -.25em;
+          overflow: hidden;
+      }
+
+      .dot::after {
+          display: block;
+          margin-left: 5.2em;
+          content: '...\A..\A.';
+          white-space: pre-wrap;
+          animation: dot 3s infinite step-start both;
+      }
+
+      @keyframes dot {
+          33% {
+              transform: translateX(-3em)
+          }
+          66% {
+              transform: translateX(-2em)
+          }
+          99% {
+              transform: translateX(-1em)
+          }
+      }
+
+      .icon::after {
+          content: attr(data-tip);
+      }
+
+      .ell-rows-2 {
+          width: 100px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+<div class="dot">正在加载中</div>
+<div class="icon" data-tip="江下哦白"></div>
+<div class="ell-rows-2">奥死的发温柔污染物儿爱啊发生地非农阿尔热问你玩儿玩儿那是地方拿身份</div>
+</body>
+</html>
